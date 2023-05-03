@@ -1,0 +1,2 @@
+filter clients with high balance 1000
+filter clients with high interest 20

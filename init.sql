@@ -8,7 +8,6 @@ CREATE TABLE client (
   country TEXT,
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
-
 CREATE TABLE account (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   client_id INTEGER NOT NULL,
@@ -17,13 +16,11 @@ CREATE TABLE account (
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY(client_id) REFERENCES client(id)
 );
-
 CREATE TABLE transaction_type (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT NOT NULL,
   description TEXT
 );
-
 CREATE TABLE transactions (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   sender_account_id INTEGER NOT NULL,
@@ -36,7 +33,6 @@ CREATE TABLE transactions (
   FOREIGN KEY(recipient_account_id) REFERENCES account(id),
   FOREIGN KEY(transaction_type_id) REFERENCES transaction_type(id)
 );
-
 CREATE TABLE balance (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   account_id INTEGER NOT NULL,

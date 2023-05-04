@@ -1,2 +1,5 @@
-filter clients with high balance 1000
-filter clients with high interest 20
+# grammar: filter clients with (balance|interest) (higher|lower|equal|not-equal) NUMBER
+
+filter clients with balance higher 1000
+filter clients with interest higher 20
+

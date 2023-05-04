@@ -12,4 +12,4 @@ SELECT client.id AS client_id,
     client.last_name
 FROM client
     JOIN monthly_client_principals ON client.id = monthly_client_principals.client_id
-WHERE monthly_client_principals.total_principal > c;
+WHERE monthly_client_principals.total_principal > 1000;  -- edit this to change the threshold

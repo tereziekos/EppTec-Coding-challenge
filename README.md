@@ -16,5 +16,4 @@ To run the rules program:
 ```
 pip instal sqlite3
 python main.py Test.db rules.txt
-
 ```

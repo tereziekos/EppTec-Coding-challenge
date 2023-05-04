@@ -1,6 +1,6 @@
 # EppTec-Coding-challenge
 
-# Data Model
+## Data Model
 
 - [Here](https://dbdiagram.io/d/64521061dca9fb07c46a49d7) you can find the datamodel described in DBML, including rendered diagram.
 
@@ -8,7 +8,6 @@
 
 ```
 bash run.sh
-
 ```
 
 ## Rules Algorithm
